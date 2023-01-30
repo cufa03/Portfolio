@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import photo from '../styles/profile_photo.jpg';
+import photo from '../styles/profile_photo_1.jpg';
 type Props = {};
 
 export default function About({}: Props) {
@@ -27,7 +27,9 @@ export default function About({}: Props) {
 				transition={{
 					duration: 1.2,
 				}}
-				src="https://scontent.fcph5-1.fna.fbcdn.net/v/t39.30808-6/246351618_4963114567049523_932861602485167984_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=j67-1RVQ0kQAX_zM7rA&_nc_ht=scontent.fcph5-1.fna&oh=00_AfD0qK5XOp87-dTS4DljYFJaqv5ERN_dE11u-WhJ6pcLlQ&oe=63A8A694"
+				// src="https://scontent.fcph5-1.fna.fbcdn.net/v/t39.30808-6/246351618_4963114567049523_932861602485167984_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=j67-1RVQ0kQAX_zM7rA&_nc_ht=scontent.fcph5-1.fna&oh=00_AfD0qK5XOp87-dTS4DljYFJaqv5ERN_dE11u-WhJ6pcLlQ&oe=63A8A694"
+				src={photo.src}
+				alt="Me with the eiffel tower"
 				width="500"
 				height="500"
 				className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
